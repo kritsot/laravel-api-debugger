@@ -120,7 +120,11 @@ class Debugger
                 return;
             }
 
-            $data->{$this->responseKey} = $this->storage->getData();
+            if (is_array($data)) {
+                $data[$this->responseKey] = $this->storage->getData();
+            } else {
+                $data->{$this->responseKey} = $this->storage->getData();
+            }
 
             $this->setResponseData($response, $data);
         }
