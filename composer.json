@@ -3,16 +3,14 @@
     "description": "Easily debug your JSON API.",
     "keywords": ["laravel", "framework", "api", "debug", "debugger", "json", "dump", "queries", "log"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Maxim Lanin",
-            "email": "max@lanin.me",
-            "homepage": "http://lanin.me"
-        }
-    ],
+    "authors": [{
+        "name": "Maxim Lanin",
+        "email": "max@lanin.me",
+        "homepage": "http://lanin.me"
+    }],
     "require": {
         "php": ">=5.6.0",
-        "illuminate/support": ">=5.4.0"
+        "illuminate/support": ">=7.0"
     },
     "require-dev": {
         "orchestra/testbench": ">=3.4.0",
@@ -21,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-           "Lanin\\Laravel\\ApiDebugger\\": "src/"
+            "Lanin\\Laravel\\ApiDebugger\\": "src/"
         },
         "files": [
             "src/Support/helpers.php"
